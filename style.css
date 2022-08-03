@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* se agrega imagen y se le da diseño */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/MAKGEOLLI.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fc5404;
+}
+
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.container-form input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: auto;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.blanco {
+    font-size: 1.7rem;
+    padding: 2rem 0;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #fc5404;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #fc5404;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.formulario2 {
+    width: 700px;
+    padding: 1rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+    
+}
+
+.formulario input [type="text"].error {
+    border: solid thin rgb(255, 0, 0);
+}
+
+.formulario input [type="email"].error {
+    border: solid thin rgb(255, 0, 0);
+}
+
+.formulario input [type="password"].error {
+    border: solid thin rgb(255, 0, 0);
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+}
+
+.boton{
+    color: rgb(248, 91, 0);
+}
+
+
+
+.sign-in {
+    position: absolute;
+    opacity: 100;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* PARA LAS NOTIFICACION DE ENVIO DE FORMULARIO */
+.notify {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    display: none;
+    
+}
+
+.check_notify {
+    background-color: green;
+}
+
+.check_notify.active {
+    display: block;
+}
+
+.error_notify{
+    background-color: red;
+}
+
+.error_notify.active {
+    display: block;
+}
